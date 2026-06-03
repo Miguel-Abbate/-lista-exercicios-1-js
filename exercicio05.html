@@ -8,15 +8,23 @@
 <body>
   <script>
      
-     let soma= numero1 + numero2let numero1 = Number(prompt("Digite o 1° numero"))
-     let numero2 = Number(prompt("Digite o 2° numero"))
-     alert('Total Soma = ' +soma)
+     alert('Quatro operações com dois números')
+     let numero1 = parseFloat(prompt("Digite o 1° número").replace(',', '.'))
+     let numero2 = parseFloat(prompt("Digite o 2° número").replace(',', '.'))
+     let soma= numero1 + numero2
+      let somafor= soma.toString().replace('.', ',')
+     alert('Total Soma = ' +somafor)
      let subtracao= numero1 - numero2
-     alert('Total Subtração= ' +subtracao)
+      let subfor= subtracao.toString().replace('.', ',')
+     alert('Total Subtração= ' +subfor)
      let multiplicacao= numero1 * numero2
-     alert('Total Multiplicação= ' +multiplicacao)
+      let multifor= multiplicacao.toString().replace('.', ',')
+     alert('Total Multiplicação= ' +multifor)
      let divisao= numero1 / numero2
-     alert('Total Divisão= ' +divisao)
+      let divifor= divisao.toString().replace('.', ',')
+     alert('Total Divisão= ' +divifor)
+        window.location.href = "index.html"
+
   </script>  
 </body>
 </html>

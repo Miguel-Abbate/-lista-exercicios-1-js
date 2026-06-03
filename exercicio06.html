@@ -7,10 +7,14 @@
 </head>
 <body>
     <script>
-     let numero1 = Number(prompt("Digite a 1° nota"))
-     let numero2 = Number(prompt("Digite a 2° nota"))
+     alert('Média entre duas notas')   
+     let numero1 = parseFloat(prompt("Digite a 1° nota ").replace(',', '.'))
+     let numero2 = parseFloat(prompt("Digite a 2° nota ").replace(',', '.'))
      let media= (numero1 + numero2) / 2
-     alert('Média= ' +media)
+     let mediafor= media.toString().replace('.', ',')
+     alert('Média= ' +mediafor)
+        window.location.href = "index.html"
+
     </script>
 </body>
 </html>

@@ -7,10 +7,14 @@
 </head>
 <body>
     <script>
-     let numero1 = Number(prompt("Digite a altura "))
-     let numero2 = Number(prompt("Digite a largura"))
+     let numero1 = parseFloat(prompt("Digite a altura ").replace(',', '.'))
+     let numero2 = parseFloat(prompt("Digite a largura").replace(',', '.'))
      let area = (numero1 * numero2)
-     alert ( 'A area do retangulo é ' +area)
+     let areafor= area.toString().replace('.', ',')
+     alert ( 'A area do retangulo é ' +areafor)
+        window.location.href = "index.html"
+
+    
      </script>
      
 </body>

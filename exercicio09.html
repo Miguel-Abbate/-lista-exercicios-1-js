@@ -9,12 +9,15 @@ total da compra. </title>
 <body>
     <script>
     let produto = prompt("Digite o nome do produto")
-    let preco= Number(prompt("Digite o valor do produto"))
+    let preco= parseFloat(prompt("Digite o valor do produto").replace(',', '.'))
     let qt = Number(prompt("Digite a quantidade do produto"))
     let total = qt * preco
-
-    alert ( 'O valor total de ' +qt + ' de '+produto+'(s)  são de '+total)
-    </script>
-    
+    let totalfor= total.toString().replace('.', ',')
+    let produtoMaiusculo = produto.toUpperCase()
+    alert ( 'O valor total de ' +qt + ' de '+produtoMaiusculo+'(s)  são o total de $'+totalfor)
+   window.location.href = "index.html"
+   </script> 
+   
+   
 </body>
 </html> 
